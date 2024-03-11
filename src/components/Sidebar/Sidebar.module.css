@@ -1,0 +1,67 @@
+.container {
+    height: 100vh;
+    width: 30%;
+    max-width: 20rem;
+    color: white;
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0rem;
+    background: #15203D;
+  }
+  
+  .logo{
+      width: 200%;
+      max-width: 10rem;
+  }
+  
+  
+  
+  .menu{
+      margin-top: 4rem;
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      gap: 5rem;
+  }
+  
+  .item{
+      display: flex;
+      color: white;
+      align-items: center;
+      text-decoration: none;
+  
+  }
+  
+  .item:hover{
+      background-color: #D89314;
+      border-radius: 8px;
+      width: 110%;
+      max-width: 20rem;
+      height: 50;
+  }
+  
+  .item>svg{
+      fill: white;
+      width: 3rem;
+      
+  }
+  
+  
+  .profile{
+      margin-top: 20rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+  }
+  .profile>img{
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border: 2px solid #D89314
+  }
+  .profile>span{
+      font-size: 18px;
+  }
+  

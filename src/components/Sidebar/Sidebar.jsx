@@ -3,6 +3,10 @@ import { MdSpaceDashboard } from "react-icons/md";
 import { AiFillCalendar, AiOutlineTable } from "react-icons/ai";
 import { FaTasks } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
+import { MdOutlineSettings } from "react-icons/md";
+
+
+
 const Sidebar = () => {
     return (
         <div className={css.container}>
@@ -11,7 +15,7 @@ const Sidebar = () => {
 
 
             <div className={css.menu}>
-            <NavLink 
+                <NavLink 
                 to="dashboard" 
                 className={css.item} 
                 title={"Dashboard"}>
@@ -21,17 +25,15 @@ const Sidebar = () => {
                 <NavLink
                     to="users"
                     className={css.item}
-                    title="Users"
-                >
-                    <AiOutlineTable size={30} />Inventory
+                    title="Users">
+                    <FaTasks size={30} />Inventory
                 </NavLink>
 
                 <NavLink
-                    to="users"
+                    to="config"
                     className={css.item}
-                    title="Users"
-                >
-                    <AiOutlineTable size={30} />Inventory
+                    title="Config">
+                    <MdOutlineSettings size={30} />Configuration
                 </NavLink>
             </div>
 
